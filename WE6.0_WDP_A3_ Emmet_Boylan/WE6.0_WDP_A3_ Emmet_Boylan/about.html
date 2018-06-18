@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Standard Boilerplate Header -->
+<html lang="en">
+<head>
+  <title>About CRUX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- link to custom css code -->
+  <link rel="stylesheet" href="customBootstrap.css">
+</head>
+<body>
+
+<!-- Navbar code. Based initially on Workshops 15+ -->
+<nav class="navbar navbar-custom navbar-static-top"> <!-- Added Custom class to change navbar colours -->
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href="about.html" class="navbar-brand"><img src="images/crux.jpg"></a> <!-- Added a brand image for Team Crux -->
+    </div>
+    <ul class="nav navbar-nav">
+      <!-- dropdown to select individual projects -->
+      <li class="dropdown">
+        <a class="dropdown-toggle glyphicon glyphicon-th-list" data-toggle="dropdown"> Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <!-- Links to project pages -->
+          <li><a href="comeFly.html">Come Fly With Me</a></li>
+          <li><a href="mindFire.html">MindFire</a></li>
+        </ul>
+      </li>
+        <li class="active"><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> About</a></li><!-- This page noted as active to aid navigation -->
+        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Full width Div for intro -->
+<div>
+  <h2>TLDR</h2>
+  <p>Team Crux is a group of Project Managers, Designers, Coders and Marketers dedicated to creating projects that make life easier or more enjoyable in a way that is rewarding, intuitive, simple and fun.<p>
+
+  <h2>What’s in a name</h2>
+  <p>A company’s name is vitally important. To identify the people behind a product or a range of products. To act as a focus for marketing and promotion. They allow a team to build a reputation and market share, to become and remain profitable.</p>
+  <p>They are also important for a company to build an identity around. To declare who they want to be, and to keep that in mind as they grow. The name Crux is a reminder the two core values that represent team Crux.</p>
+</div>
+
+<!-- Div to display content in Bootstrap columns -->
+<div class="row">
+  <div class="col-sm-6">
+    <img src="images/aboutCRUX1.jpg">          
+    <p>‘Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new "features" ‘</p> 
+    <p>Doug McIlroy, 1978</p>
+
+    <p>Each program or application should be focussed on resolving one key problem for its users and doing that job effectively and with a minimum of fuss or distraction. There are million apps available, for a million things, each clamouring for resources and attention.</p>
+    <p>For every need, there is a central problem that needs to be addressed. There may be many side effects, and many features that support the effectiveness of a solution, but one core issue that everything else revolves around.</p>
+
+    <h4>The Crux of the matter.</h4>
+    <p>This name reminds us that for all the features we think would be ‘cool’, all the things we could do, the focus should be on resolving the problem the user wanted to solve when they went looking for an app in the first place.</p>
+
+  </div>
+
+
+  <div class="col-sm-6">
+    <img src="images/aboutCRUX2.jpg">
+    <p>The name also works as a handy anagram, Creating Remarkable User Experiences.</p>
+    <p>As a project develops and grows, there is a tendency to develop tunnel vision. The project is worked on, designed, redesigned and discussed over and over as it refines. The team becomes excited, invested and overly familiar with the project.</p>
+    <p>In the rush to solve a problem technically, with exciting new features or clever algorithms, there is a danger of losing sight of the other key component in an application.</p>
+    <h4>The User.</h4>
+    <p>Without whom everything else becomes pointless. The cleverest, most beautiful and efficient code in the world is meaningless if it isn’t actually used. If it is too complex, badly explained, badly laid out, or just plain ugly or irritating to use. If it doesn’t stand out amongst a million alternatives.</p>
+
+    <p>It is vitally important that the User Experience is at the centre of all we do.</p>
+ </div>
+</div>
+  <!-- Javascript loaded after text to prevent "hanging" on slow connections -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+  
+</html>

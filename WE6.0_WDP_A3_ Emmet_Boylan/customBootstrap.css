@@ -1,0 +1,151 @@
+/*
+* Some custom css to change the default navbar colour, to better match logo
+*/
+.navbar-custom {
+    background-color:#0094c1;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:#00a5d2;
+}
+
+/* Transition effect added to colour change on navbar */
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #3333aa;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#3333aa;
+}
+
+/*
+* Custom navbar, as above, but coloured orange to match that projects logo
+*/
+.navbar-custom-orange {
+    background-color:#ffc300;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom-orange .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom-orange .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:#ffa400;
+}
+
+/* Includes trasition colour changes ot show active location (aid navigation) */
+.navbar-custom-orange .navbar-nav > li > a:hover,
+.navbar-custom-orange .navbar-nav > li > a:focus,
+.navbar-custom-orange .navbar-nav > .active > a:hover,
+.navbar-custom-orange .navbar-nav > .active > a:focus,
+.navbar-custom-orange .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #ff9333;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+.navbar-custom-orange .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom-orange .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom-orange .icon-bar {
+    background-color:#ff9333;
+}
+
+/*
+* A little hack for better logo placement
+*/
+.navbar-brand> img {
+    margin-top: -5px;
+}
+
+
+/*
+* Minor margin changes to prevent clipping edge of screen (minor cosmetic choice)
+*/
+p {
+    margin: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px;
+    color:#0094c1; /* Change heading colour to match Crux logo */
+}
+
+
+/*
+* Transition effects to fade in non navbar elements
+*/
+p, h1, h2, h3, h4, h5, h6, .fadeInUL {
+/*body:not(.navbar) {*/ /* did not work as planned, substituted .fadeInUL instead */
+    -webkit-animation: fadein 4s; 
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s; 
+    -o-animation: fadein 4s; 
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*
+* To center images in css instead of html
+*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Boilerplate Header -->
+<html lang="en">
+<head>
+  <title>Project MindFire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="customBootstrap.css">
+</head>
+<body>
+
+<!-- Navbar code. Based on workshops. Custom colour orange navbar to match branding -->
+<nav class="navbar navbar-custom-orange navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <!-- MinddFire logo. Logo is orange based instead of blue like other project and team logo -->
+        <a href="about.html" class="navbar-brand"><img src="images/MindFire.jpg"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <!-- Dropdown menu. Project tab is set as active -->
+        <li class="active"><a class="dropdown-toggle glyphicon glyphicon-th-list" data-toggle="dropdown" href="index.html"> Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="comeFly.html">Come Fly With Me</a></li>
+          <li><a href="mindFire.html">MindFire</a></li>
+        </ul>
+      </li>
+        <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> About</a></li>
+        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- full width div with logo-->
+<div>
+  <img src="images/MindFire0.jpg">
+</div>
+
+<!-- 3 column div detailing project -->
+<div class="row">
+  <div class="col-sm-4">
+    <h2> Concept Overview </h2>
+    <p> MindFire's concept targets students, professionals and seniors interested in preserving and enhancing
+      their memory functions, cognitive abilities and coping skills . It may be of particular benefit to people
+      who have suffered a brain injury and need memory re-education.
+      The users’ goals are to improve and develop their cognitive functions such as learning, reasoning,
+      problem solving, understanding, remembering and paying attention, in an innovative and exciting
+      manner. These improvements should result in improved mental health and quality of life.
+      Our concept will achieve these objectives by offering:
+      <ul class="fadeInUL"> <!-- UL class fadeInUL is to allow lists in body to fade in, but leave lists in navbar -->
+        <li> A variety of memory games and puzzles; these activities will strengthen memory and
+        cognitive performance by forming adaptable thinking patterns and habits.</li>
+        <li> Gamification and inbuilt social interaction features which will track and guide the user's
+        progress through an interactive rewards system.</li>
+        <li> A sleeping pattern tracker which will help overall memory processing.</li>
+        <li> User access to recommended information on diet, exercise and mindfulness via an RSS
+        feed-reader.</li>
+      </ul>
+      The core value of our concept is to improve the user’s overall well-being by enhancing and increasing
+      their memory functions, cognitive abilities and lifestyle. Reduced brain function is a natural ageing
+      process, even in people without medical conditions. Studies show that continued brain stimulation has
+      many positive impacts on our general health and brain at any age. Also, regular exercise, good eating
+      habits and mindfulness are a natural complement to memory training.</p>
+  </div>
+
+  <div class="col-sm-4">
+  	<h2> User Needs </h2>
+  	<p> MindFire is designed to strengthen memory and cognitive skills. These skills are universally beneficial,
+    however they will be of most interest to the following groups:
+    <ul class="fadeInUL"> <!-- UL class fadeInUL is to allow lists in body to fade in, but leave lists in navbar -->
+      <li> Anyone who wants to improve their mental agility as part of their overall health and personal
+      development, or simply enjoys puzzles.</li>
+      <li> People who feel the need to improve memory and problem solving to become more effective
+      in work, or studying for exams or qualifications.</li>
+      <li> People who suffer from memory loss/deterioration due to illness, age or injury and who need
+      to develop coping mechanisms to compensate.</li>
+    </ul>
+    With improvements in technology and medicine occurring at a considerable rate, people are living
+    longer lives than ever before. Memory loss and dementia are increasingly affecting more people
+    worldwide. As research builds a greater awareness and understanding of these conditions, MindFire
+    will help people to adopt new habits and behavioural patterns, allowing them to make the most of their
+    extended lives.
+    By making these challenges easy, intuitive and enjoyable through gamification, we improve the
+    chances of these memory enhancements becoming permanent in everyone’s life.
+    </p>
+  </div>
+
+  <div class="col-sm-4">
+  	<h2> Functional Scope </h2>
+  	<p> MindFire allows users to improve their overall brain function through memory and cognitive-based
+      games, puzzles and challenges. Tracking results and gamified reward system allow a clear view of
+      progression and maintain the user's interest to encourage regular use. Progress is measured against
+      personal targets, participating peers or an app-based model based on the user’s profile.
+      Social Media integration creates a competitive edge that stimulates the users and can help in building
+      a virtual community which is beneficial to psychological well-being.</p>
+
+      <p>The sleeping pattern tracker provides insight into how the user’s sleeping patterns can be improved to
+      support better cognitive function.</p>
+
+      <p>The RSS feed-reader allows a user to access multiple information streams to complement their
+      training.</p>
+
+      <p>Our concept doesn't compete with medical research or applications. MindFire is not a diagnostic or
+      therapeutic application for debilitating mental diseases such as Alzheimer's, dementia or any other
+      mental health impairment that affect the memory.</p>
+
+      <p>The roadmap for MindFire is to develop a lifestyle approach to improve memory and overall
+      well-being. Cognitive games and regular sleep can improve memory, but the holistic approach brings
+      it to the next level. To complement the RSS feed-reader, and provide more targeted lifestyle advice,
+      we plan on creating API's allowing integration with recommended apps that offer relaxation
+      techniques, mindfulness, physical activities and dietary advice. We are not looking to develop multiple
+      apps. The aim of the project is to improve memory and cognitive function, supported by suggested
+      lifestyle changes. </p>
+  </div>
+</div>
+  <!-- Javascript loaded at end of page, to prevent "hanging" on slow connections -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <div class="container">
+  <!-- Launch modal on page load -->
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+  </script>
+
+  <!-- Modal asks users to fill in survey -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">MindFire Design Survey</h4>
+        </div>
+        <div class="modal-body">
+          <p>Team Crux are currently conducting surveys on the design of this project</p>
+          <p>This will enable us to design a better application that meets user needs. If you are interested in helping out, please click the link below</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSey7QPQq1A3lW6Ahs5dCwXDCimZZEoJFDX9DmeFF0wt-yCH6w/viewform" target="_blank">MindFire Survey</a>
+          <p>Alternatively, click close to return to site</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
